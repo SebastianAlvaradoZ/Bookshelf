@@ -45,7 +45,7 @@ fun BookshelfApp() {
                         color = MaterialTheme.colorScheme.onPrimary
                     )
                 },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+                colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             )
