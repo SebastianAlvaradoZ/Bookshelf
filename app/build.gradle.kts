@@ -44,7 +44,18 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    // ViewModel integrado con Compose
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    // Retrofit + Gson: consumo de la API de Google Books
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    // Coil: descarga y muestra imágenes de forma asíncrona
+    implementation(libs.coil.compose)
+    // Íconos de Material (Search, Refresh)
+    implementation(libs.androidx.compose.material.icons.core)
     testImplementation(libs.junit)
+    // Pruebas de corrutinas (runTest, Dispatchers.setMain)
+    testImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
